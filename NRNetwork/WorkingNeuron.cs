@@ -47,7 +47,7 @@ namespace NeuralNetworkLesson
 
         public void deltaLearning(float epsilon, float smallDelta) {
             for (int i = 0; i < connections.Count(); i++) {
-                float bigDelta = epsilon * smallDelta * connections[i].GetValue();
+                float bigDelta = epsilon * smallDelta * connections[i].GetNeuron().GetValue();
 
                 connections[i].AddWeight(bigDelta);
             }

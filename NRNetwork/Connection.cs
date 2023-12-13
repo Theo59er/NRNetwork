@@ -31,6 +31,13 @@ namespace NeuralNetworkLesson
             this.weight += weight;
         }
 
+        public Neuron GetNeuron()
+        {
+            return neuron;
+
+        }
+
+
     }
 
    
