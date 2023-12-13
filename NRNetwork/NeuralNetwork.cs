@@ -73,19 +73,20 @@ namespace NeuralNetworkLesson {
 
 
 
-        public void deltaLearning(float[] shoulds, float epsilon ){
+        public void deltaLearning(float[] shoulds, float epsilon) {
+          
+                if (shoulds.Length != outputNeurons.Count()) {
+                    throw new Exception("u are gay weil du falsche anzahl von inputs hast du eumel ");
+                }
+                if (hiddenNeurons.Count() != 0) {
+                    throw new Exception("ahhhh ne du kann ich n ciht weil hidden layer (bin deltsa junge)");
+                }
 
-            if(shoulds.Length != outputNeurons.Count()) {
-                throw new Exception("u are gay weil du falsche anzahl von inputs hast du eumel ");
-            }
-            if(hiddenNeurons.Count() != 0) {
-                throw new Exception("ahhhh ne du kann ich n ciht weil hidden layer (bin deltsa junge)");
-            }
-
-            for(int i = 0 ; i < shoulds.Length; i++) {
-                float smallDelta = shoulds[i] - outputNeurons[i].GetValue();
-                //print("smallDelta: " + smallDelta);
-                outputNeurons[i].deltaLearning(epsilon, smallDelta);
+                for (int i = 0; i < shoulds.Length; i++) {
+                    float smallDelta = shoulds[i] - outputNeurons[i].GetValue();
+                    //print("smallDelta: " + smallDelta);
+                    outputNeurons[i].deltaLearning(epsilon, smallDelta);
+                
             }
         }
 

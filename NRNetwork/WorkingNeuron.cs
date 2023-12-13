@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -46,11 +47,14 @@ namespace NeuralNetworkLesson
         }
 
         public void deltaLearning(float epsilon, float smallDelta) {
-            for (int i = 0; i < connections.Count(); i++) {
-                float bigDelta = epsilon * smallDelta * connections[i].GetNeuron().GetValue();
+          
+                for (int i = 0; i < connections.Count(); i++) {
+                    float bigDelta = epsilon * smallDelta * connections[i].GetNeuron().GetValue();
 
-                connections[i].AddWeight(bigDelta);
-            }
+                    connections[i].AddWeight(bigDelta);
+                }
+                
+            
         }
 
     }
