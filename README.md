@@ -70,14 +70,14 @@ The training data file should be in JSON format and look like the following exam
   },
   "Rating": 0.9832248687744141
 }
-````
+```
 ### Integration into Unity:
 Seamlessly integrate the neural network into your Unity project and use it to dynamically assess color preferences.
 
 
 ### Chinese:
 
-```markdown
+markdown
 ## Unity神经网络颜色偏好检测器
 
 ### 概述：
