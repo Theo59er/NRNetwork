@@ -1,4 +1,4 @@
-gehe zu : https://github.com/Theo59er/NRNetwork#funktionen
+Test Game : https://github.com/Theo59er/NRNetwork/tree/main/UnityNeuralNetworkTestAPP
 ## Neural Network Farbpräferenz-Detektor für Unity
 
 ### Überblick:
@@ -37,6 +37,8 @@ Die Trainingsdatendatei sollte im JSON-Format vorliegen und wie das folgende Bei
 Integrieren Sie das neuronale Netzwerk problemlos in Ihr Unity-Projekt und verwenden Sie es, um Farbpräferenzen dynamisch zu bewerten.
 
 ## English:
+
+Test Game : https://github.com/Theo59er/NRNetwork/tree/main/UnityNeuralNetworkTestAPP
 
 ## Neural Network Color Preference Detector for Unity
 
@@ -77,6 +79,8 @@ Seamlessly integrate the neural network into your Unity project and use it to dy
 
 
 ### Chinese:
+
+Test Game : https://github.com/Theo59er/NRNetwork/tree/main/UnityNeuralNetworkTestAPP
 
 markdown
 ## Unity神经网络颜色偏好检测器
